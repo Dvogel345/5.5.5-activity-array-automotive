@@ -26,6 +26,16 @@ class Mercury extends v{
             console.log(this.model + " " + this.make + " not enough room for all passangers.");
         }
     }
+    start(){
+        if (this.fuel > 0) {
+            console.log("engine started!!!");
+            return this.started = true;
+        } else {
+            console.log("engine cannot start due to no fuel!");
+            return this.started = false;
+        }
+    }
 
+    
     
 }

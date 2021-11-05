@@ -35,7 +35,12 @@ class Mercury extends v{
             return this.started = false;
         }
     }
-
+    scheduleService(mileage){
+        if(this.mileage>30000){
+            this.scheduleService == true;
+            return this.scheduleService;
+        }
+    } 
     
     
 }

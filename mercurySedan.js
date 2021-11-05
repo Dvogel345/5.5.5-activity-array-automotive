@@ -15,5 +15,17 @@ class Mercury extends v{
         this.maximumSpeed = 200;
         this.fuel = 100;
         this.scheduleService = false;
-    } 
+    }
+    loadPassenger(num){
+        if(this.passenger < this.maximumPassangers){
+            this.passenger = num;
+            return availableRoom == true
+        } else if(this.passenger == this.maximumPassangers){
+            console.log(this.model + " " + this.make + " is full.")
+        } else {
+            console.log(this.model + " " + this.make + " not enough room for all passangers.");
+        }
+    }
+
+    
 }
